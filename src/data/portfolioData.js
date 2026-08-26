@@ -2,12 +2,13 @@
 // Nothing here has been invented.
 
 export const profile = {
-  name: "Saran R",
+  name: "Saran Ravichandran",
   title: "Developer & Analyst",
   tagline: "Building things with code.",
   summary:
     "AI Developer building machine learning and data analysis solutions that streamline workflows and improve system performance. Integrates AI tools into existing software environments and supports adoption through team training and technical guidance.",
   location: "Tiruppur 641 603, India",
+  phone: "7010184426",
   email: "saran.05012006@gmail.com",
 };
 

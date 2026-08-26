@@ -45,20 +45,16 @@
   background-repeat: no-repeat;
   pointer-events: none;
   filter: blur(6px) brightness(0.58) saturate(0.85);
-  -webkit-mask-image: radial-gradient(
-    circle var(--mr, 280px) at var(--mx, 50%) var(--my, 50%),
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 38%,
-    rgba(0, 0, 0, 0.7) 72%,
-    rgba(0, 0, 0, 0.96) 100%
-  );
-  mask-image: radial-gradient(
-    circle var(--mr, 280px) at var(--mx, 50%) var(--my, 50%),
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 38%,
-    rgba(0, 0, 0, 0.7) 72%,
-    rgba(0, 0, 0, 0.96) 100%
-  );
+  -webkit-mask-image: radial-gradient(circle var(--mr, 280px) at var(--mx, 50%) var(--my, 50%),
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 38%,
+      rgba(0, 0, 0, 0.7) 72%,
+      rgba(0, 0, 0, 0.96) 100%);
+  mask-image: radial-gradient(circle var(--mr, 280px) at var(--mx, 50%) var(--my, 50%),
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 38%,
+      rgba(0, 0, 0, 0.7) 72%,
+      rgba(0, 0, 0, 0.96) 100%);
   opacity: 0;
   transition: none;
 }
@@ -122,6 +118,7 @@
 .content-panel::-webkit-scrollbar {
   width: 5px;
 }
+
 .content-panel::-webkit-scrollbar-thumb {
   background: var(--wood-light);
   border-radius: 4px;
@@ -167,6 +164,7 @@
 }
 
 .hero-name {
+  font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(3rem, 9vw, 6.4rem);
   color: var(--cream-soft);
   line-height: 0.95;
@@ -174,12 +172,13 @@
 }
 
 .hero-title {
-  font-family: var(--font-mono);
-  font-size: clamp(0.85rem, 1.4vw, 1.05rem);
-  letter-spacing: 0.14em;
+  font-family: 'Lora', serif;
+  font-size: clamp(1.5rem, 2vw, 2.0rem);
+  letter-spacing: 0.12em;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--amber);
-  margin-top: 0.9rem;
+  margin-top: 0.3rem;
 }
 
 .hero-summary {
@@ -213,9 +212,23 @@
 }
 
 @keyframes scrollcue {
-  0% { transform: scaleY(0.3); transform-origin: top; opacity: 0.4; }
-  50% { transform: scaleY(1); transform-origin: top; opacity: 1; }
-  100% { transform: scaleY(0.3); transform-origin: bottom; opacity: 0.4; }
+  0% {
+    transform: scaleY(0.3);
+    transform-origin: top;
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(0.3);
+    transform-origin: bottom;
+    opacity: 0.4;
+  }
 }
 
 /* ---------- Contact ---------- */
@@ -544,9 +557,11 @@
   .hero-summary {
     display: none;
   }
+
   .eyebrow-loc {
     display: none;
   }
+
   .panel-body {
     font-size: 0.92rem;
   }
@@ -583,9 +598,11 @@
 .static-section.side-right .static-overlay {
   justify-content: flex-end;
 }
+
 .static-section.side-left .static-overlay {
   justify-content: flex-start;
 }
+
 .static-section.side-full .static-overlay {
   justify-content: center;
   text-align: center;
