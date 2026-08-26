@@ -236,6 +236,26 @@ export default function PortfolioScene() {
               ref={focusRef}
               style={{ backgroundImage: `url(${workspaceImg})` }}
             />
+            <div
+              className="scene-profile-pic"
+              style={{
+                position: 'absolute',
+                left: '50%',
+                top: '40%',
+                transform: 'translate(-50%, -50%)',
+                width: '135px',
+                height: '135px',
+                borderRadius: '50%',
+                backgroundImage: "url('/profile.jpg')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                boxShadow: '0 0 25px rgba(237, 187, 125, 0.72), inset 0 0 15px rgba(229, 180, 131, 0.6)',
+                border: '1px solid rgba(214, 172, 118, 0.72)',
+                filter: 'sepia(0.4) contrast(1.2) brightness(0.9) saturate(1.8) hue-rotate(-7deg)',
+                zIndex: 10,
+                transition: 'opacity 0.5s ease'
+              }}
+            />
           </div>
           <div className="scene-vignette" />
           <div className="scene-grain" />
