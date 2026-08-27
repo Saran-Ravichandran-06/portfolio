@@ -251,7 +251,7 @@ export default function PortfolioScene() {
                 backgroundPosition: 'center',
                 boxShadow: '0 0 25px rgba(237, 187, 125, 0.72), inset 0 0 15px rgba(229, 180, 131, 0.3)',
                 border: '1px solid rgba(214, 172, 118, 0.72)',
-                filter: 'sepia(0.3) contrast(1.2) brightness(0.75) saturate(1.9) hue-rotate(-9deg)',
+                filter: 'sepia(0.3) contrast(1.2) brightness(0.65) saturate(1.9) hue-rotate(-9deg)',
                 zIndex: 10,
                 transition: 'opacity 0.5s ease'
               }}
