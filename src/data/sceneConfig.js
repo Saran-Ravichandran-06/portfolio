@@ -27,7 +27,7 @@ export const scenes = [
     label: "About",
     target: "Notes",
     focus: { x: 0.449, y: 0.137 },
-    zoom: 1.65,
+    zoom: 1.4,
     zoomMobile: 1.35,
     contentSide: "left",
     anchorX: 0.72,

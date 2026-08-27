@@ -5,8 +5,13 @@ export const profile = {
   name: "Saran Ravichandran",
   title: "Developer & Analyst",
   tagline: "Building things with code.",
-  summary:
-    "AI Developer building machine learning and data analysis solutions that streamline workflows and improve system performance. Integrates AI tools into existing software environments and supports adoption through team training and technical guidance.",
+  summary: [
+    "B.Tech AI & DS Student",
+    "Building real-world AI products",
+    "Full-Stack Developer and Data Analysis",
+    "Passionate about AI Agents, LLMs, Apps & Automation",
+    "Exploring Advanced AI Systems & Scalable Backends"
+  ],
   location: "Tiruppur 641 603, India",
   phone: "7010184426",
   email: "saran.05012006@gmail.com",
