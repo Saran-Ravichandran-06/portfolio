@@ -537,6 +537,70 @@
   font-size: 1.1rem;
 }
 
+/* ---------- Skills ---------- */
+
+.content-panel.skills-panel {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  padding: 3rem;
+}
+
+.skills-panel .panel-title {
+  font-family: var(--font-sofia), system-ui, sans-serif;
+  font-weight: 900;
+  line-height: 1.18;
+  font-size: 6rem;
+  background: linear-gradient(135deg, #fff3b0 0%, #ffd700 35%, #ffb300 70%, #d48a00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(2px 0px 0px #ff9d00) drop-shadow(3px 0px 0px rgba(0, 0, 0, 0.95));
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: 2rem;
+}
+
+.skills-panel .skill-group-label {
+  font-family: var(--font-sofia), system-ui, sans-serif;
+  font-weight: 900;
+  line-height: 1.18;
+  font-size: 1.8rem;
+  color: #ff0000;
+  margin-bottom: 1.5rem;
+  display: block;
+  text-align: center;
+  text-shadow: 2px 0px 0px #ff4d4d, 4px 0px 0px rgba(0, 0, 0, 0.95);
+}
+
+.skills-panel .skill-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.skills-panel .skill-item {
+  font-family: var(--font-sofia), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  line-height: 1.75;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
