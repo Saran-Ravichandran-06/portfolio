@@ -498,21 +498,28 @@
 }
 
 .about-panel .panel-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 5rem;
-  font-weight: 700px;
-  letter-spacing: 0.03em;
-  color: #fff;
-  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.6);
-  margin-bottom: 0.8rem;
+  font-family: var(--font-sofia), system-ui, sans-serif;
+  font-weight: 900;
+  line-height: 1.18;
+  font-size: 6rem;
+  background: linear-gradient(135deg, #fff3b0 0%, #ffd700 35%, #ffb300 70%, #d48a00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(2px 0px 0px #ff9d00) drop-shadow(3px 0px 0px rgba(0, 0, 0, 0.95));
+  margin-bottom: 0.5rem;
 }
 
 .about-panel .panel-body,
 .about-panel .about-lede,
 .about-panel .about-meta {
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
+  font-family: var(--font-sofia), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  line-height: 1.75;
+  font-size: 4rem;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.7);
 }
