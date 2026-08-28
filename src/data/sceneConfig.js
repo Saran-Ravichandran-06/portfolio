@@ -38,7 +38,7 @@ export const scenes = [
     id: "skills",
     label: "Skills",
     target: "Laptop",
-    focus: { x: 0.220, y: 0.566 },
+    focus: { x: 0.210, y: 0.566 },
     zoom: 1.5,
     zoomMobile: 1.3,
     contentSide: "right",

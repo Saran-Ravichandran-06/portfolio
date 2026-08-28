@@ -20,7 +20,7 @@ export const profile = {
 export const skills = {
   categories: [
     {
-      label: "Technical Skills",
+      label: "Artificial Intelligence",
       items: [
         "AI Integration",
         "Machine Learning",
@@ -30,13 +30,12 @@ export const skills = {
       ],
     },
     {
-      label: "Data Science & Analytics",
+      label: "Data Science",
       items: [
         "Data Analysis",
         "Data Preprocessing",
         "Feature Engineering",
         "Model Evaluation",
-        "SQL Querying",
       ],
     },
   ],
