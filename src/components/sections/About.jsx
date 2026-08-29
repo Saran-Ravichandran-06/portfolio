@@ -11,8 +11,8 @@ const About = forwardRef(function About(_, ref) {
         ))}
       </div>
       <div className="about-meta">
-        <span>{profile.location}</span>
-        <span>{profile.email}</span>
+        {/* <span className="eyebrow">{profile.location}</span> */}
+        <span className="eyebrow" style={{ marginTop: '0.2rem' }}>{profile.email}</span>
       </div>
     </ContentPanel>
   );

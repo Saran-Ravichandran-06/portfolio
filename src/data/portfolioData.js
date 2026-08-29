@@ -12,7 +12,7 @@ export const profile = {
     "Passionate about AI Agents, LLMs, Apps & Automation",
     "Exploring Advanced AI Systems & Scalable Backends"
   ],
-  location: "Tiruppur 641 603, India",
+  location: "Tiruppur, India",
   phone: "7010184426",
   email: "saran.05012006@gmail.com",
 };
