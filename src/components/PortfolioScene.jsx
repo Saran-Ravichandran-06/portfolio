@@ -23,6 +23,7 @@ export default function PortfolioScene() {
   const stageRef = useRef(null);
   const groupRef = useRef(null);
   const focusRef = useRef(null);
+  const profilePicRef = useRef(null);
   const dotRefs = useRef([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -97,6 +98,10 @@ export default function PortfolioScene() {
         focusVars.opacity = scenes[0].contentSide === "full" ? 0 : 1;
         applyFocus();
 
+        if (profilePicRef.current) {
+          gsap.set(profilePicRef.current, { opacity: 1 });
+        }
+
         scenes.forEach((scene, i) => {
           const el = panelsById[scene.id]?.current;
           if (!el) return;
@@ -150,6 +155,14 @@ export default function PortfolioScene() {
             },
             stepStart
           );
+
+          if (i === 1 && profilePicRef.current) {
+            tl.to(
+              profilePicRef.current,
+              { opacity: 0, duration: 0.6, ease: "power2.inOut" },
+              stepStart
+            );
+          }
 
           const prevEl = panelsById[prevScene.id]?.current;
           if (prevEl) {
@@ -238,6 +251,7 @@ export default function PortfolioScene() {
             />
             <div
               className="scene-profile-pic"
+              ref={profilePicRef}
               style={{
                 position: 'absolute',
                 left: '50%',
@@ -252,8 +266,7 @@ export default function PortfolioScene() {
                 boxShadow: '0 0 25px rgba(237, 187, 125, 0.72), inset 0 0 15px rgba(229, 180, 131, 0.3)',
                 border: '1px solid rgba(214, 172, 118, 0.72)',
                 filter: 'sepia(0.3) contrast(1.2) brightness(0.65) saturate(1.9) hue-rotate(-9deg)',
-                zIndex: 10,
-                transition: 'opacity 0.5s ease'
+                zIndex: 10
               }}
             />
           </div>
