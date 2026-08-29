@@ -135,10 +135,23 @@
 }
 
 .panel-title {
-  font-size: clamp(1.7rem, 2.6vw, 2.3rem);
-  color: var(--ink);
+  font-family: var(--font-sofia), system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 1.18;
+  font-size: 5.5rem;
+  letter-spacing: 1.7px;
+  background: linear-gradient(135deg, #ffe761);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: 
+    drop-shadow(3px 1px 0px #c39902)
+    drop-shadow(2px 1px 0px #c39902)
+    drop-shadow(2px 2px 0px #c39902)
+    drop-shadow(2px 1px 0px #ffffff)
+    drop-shadow(1px 1px 5px rgba(0,0,0,0.6));
   margin-bottom: 1.2rem;
-  line-height: 1.15;
 }
 
 .panel-body {
@@ -497,19 +510,7 @@
   top: 35%;
 }
 
-.about-panel .panel-title {
-  font-family: var(--font-sofia), system-ui, sans-serif;
-  font-weight: 900;
-  line-height: 1.18;
-  font-size: 6rem;
-  background: linear-gradient(135deg, #fff3b0 0%, #ffd700 35%, #ffb300 70%, #d48a00 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  filter: drop-shadow(2px 0px 0px #ff9d00) drop-shadow(3px 0px 0px rgba(0, 0, 0, 0.95));
-  margin-bottom: 0.5rem;
-}
+
 
 .about-panel .panel-body,
 .about-panel .about-lede,
@@ -549,16 +550,6 @@
 }
 
 .skills-panel .panel-title {
-  font-family: var(--font-sofia), system-ui, sans-serif;
-  font-weight: 900;
-  line-height: 1.18;
-  font-size: 6rem;
-  background: linear-gradient(135deg, #fff3b0 0%, #ffd700 35%, #ffb300 70%, #d48a00 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  filter: drop-shadow(2px 0px 0px #ff9d00) drop-shadow(3px 0px 0px rgba(0, 0, 0, 0.95));
   margin-bottom: 2rem;
   text-align: center;
 }
