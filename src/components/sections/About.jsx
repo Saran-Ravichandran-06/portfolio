@@ -5,14 +5,14 @@ import { profile } from "../../data/portfolioData";
 const About = forwardRef(function About(_, ref) {
   return (
     <ContentPanel ref={ref} side="left" className="about-panel" title="About Me">
-      <div className="about-lede">
+      <ul className="about-lede-list">
         {profile.summary.map((line, idx) => (
-          <p key={idx} style={{ marginBottom: '0.3rem' }}>{line}</p>
+          <li key={idx}>{line}</li>
         ))}
-      </div>
+      </ul>
       <div className="about-meta">
-        {/* <span className="eyebrow">{profile.location}</span> */}
-        <span className="eyebrow" style={{ marginTop: '0.2rem' }}>{profile.email}</span>
+        <span className="eyebrow">{profile.email}</span>
+        <span className="eyebrow" style={{ marginTop: '0.1rem' }}>{profile.location}</span>
       </div>
     </ContentPanel>
   );

@@ -8,8 +8,8 @@ export const profile = {
   summary: [
     "B.Tech AI & DS Student",
     "Building real-world AI products",
-    "Full-Stack Developer and Data Analysis",
-    "Passionate about AI Agents, LLMs, Apps & Automation",
+    "Full-Stack Developer and Data Analyst",
+    "Passionate about AI Agents, LLMs, Apps & Automations",
     "Exploring Advanced AI Systems & Scalable Backends"
   ],
   location: "Tiruppur, India",
