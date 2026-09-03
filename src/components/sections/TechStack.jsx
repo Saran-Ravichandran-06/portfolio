@@ -4,19 +4,18 @@ import { techStack } from "../../data/portfolioData";
 
 const TechStack = forwardRef(function TechStack(_, ref) {
   return (
-    <ContentPanel ref={ref} side="left" kicker="03 — Tech Stack">
-      {techStack.groups.map((group) => (
-        <div className="skill-group" key={group.label}>
-          <span className="skill-group-label">{group.label}</span>
-          <div className="pill-row">
-            {group.items.map((item) => (
-              <span className="pill accent" key={item}>
-                {item}
-              </span>
-            ))}
+    <ContentPanel ref={ref} side="left" className="tech-panel" title="Tech Stack">
+      <div className="tech-stack-container">
+        {techStack.groups.map((group) => (
+          <div className="tech-group" key={group.label}>
+            <span className="tech-group-label">{group.label}</span>
+            <span className="tech-group-divider">—</span>
+            <div className="tech-item-row">
+              {group.items.join(", ")}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </ContentPanel>
   );
 });

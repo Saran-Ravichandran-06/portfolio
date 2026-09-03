@@ -44,16 +44,20 @@ export const skills = {
 export const techStack = {
   groups: [
     {
+      label: "Frontend",
+      items: ["HTML", "CSS", "React", "Tailwind"],
+    },
+    {
+      label: "Backend",
+      items: ["NodeJS", "ExpressJS", "Flask"],
+    },
+    {
       label: "Languages",
-      items: ["Python", "SQL", "JavaScript", "PHP", "HTML", "CSS"],
+      items: ["Python", "Java", "PHP", "JavaScript", "TypeScript"],
     },
     {
-      label: "Data & Databases",
-      items: ["MySQL", "Data Preprocessing", "Feature Engineering"],
-    },
-    {
-      label: "Tools",
-      items: ["Version Control", "Model Evaluation"],
+      label: "DataBase",
+      items: ["PostgreSQL", "MySQL", "MongoDB"],
     },
   ],
 };
