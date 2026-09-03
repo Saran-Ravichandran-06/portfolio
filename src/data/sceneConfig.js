@@ -44,7 +44,7 @@ export const scenes = [
     contentSide: "right",
     anchorX: 0.27,
     anchorYMobile: 0.42,
-    focusRadius: 410,
+    focusRadius: 380,
   },
   {
     id: "techStack",
