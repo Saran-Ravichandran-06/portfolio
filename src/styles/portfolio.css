@@ -90,8 +90,9 @@
 
 .content-panel {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   width: min(58%, 760px);
   max-height: 84vh;
   overflow-y: auto;
@@ -514,7 +515,6 @@
   border: none;
   box-shadow: none;
   padding: 3rem;
-  top: 35%;
 }
 
 
@@ -553,7 +553,8 @@
   border: none;
   box-shadow: none;
   padding: 3rem;
-  width: min(75%, 1000px);
+  width: max-content;
+  max-width: 90vw;
 }
 
 .skills-panel .panel-title {
@@ -610,6 +611,8 @@
   border: none;
   box-shadow: none;
   padding: 3rem;
+  width: max-content;
+  max-width: 90vw;
 }
 
 .tech-panel .panel-title {
