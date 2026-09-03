@@ -38,6 +38,16 @@ export const skills = {
         "Model Evaluation",
       ],
     },
+    {
+      label: "Non-Technical",
+      items: [
+        "Collaborative",
+        "Adaptive",
+        "Self Learning",
+        "Creative",
+        "Communicative",
+      ],
+    },
   ],
 };
 
