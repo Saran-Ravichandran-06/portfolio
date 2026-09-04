@@ -74,16 +74,24 @@ export const techStack = {
 
 export const projects = [
   {
-    name: "Smart Email and Communication Agent",
+    name: "Smart Email Agent",
+    description: "AI-powered Smart Email & Communication Agent that connects with Gmail, classifies email priority, extracts actionable tasks, detects follow-ups, generates contextual reply drafts using local LLMs, and helps users manage communication workflows efficiently.",
+    github: "https://github.com/Saran-Ravichandran-06/Smart-Email-Agent"
   },
   {
-    name: "AI Business Intelligence Agent",
+    name: "InsightIQ",
+    description: "InsightIQ is an AI Business Intelligence platform that enables users to upload datasets, ask questions in natural language, and receive interactive dashboards, KPI cards, visualizations, and AI-generated business insights.",
+    github: "https://github.com/Saran-Ravichandran-06/Business-Intelligence-Agent"
   },
   {
-    name: "RAG ChatBot",
+    name: "RAG-BOT",
+    description: "Full-stack RAG chatbot that answers questions from user-provided PDFs, text files, and web URLs. Uses per-chat vector stores, local LLaMA-3 via Ollama for generation, and automated evaluation to detect hallucinations. React UI with persistent history and contextual responses.",
+    github: "https://github.com/Saran-Ravichandran-06/RAG-BOT"
   },
   {
-    name: "Job Portal",
+    name: "Job Portal System",
+    description: "Job Portal System is a simple web-based application built using PHP, MySQL, HTML, CSS, and JavaScript. It allows job seekers to search and apply for jobs, while recruiters can post and manage job listings. The system includes features like job application tracking, status updates, and role-based dashboards for seekers and recruiters.",
+    github: "https://github.com/Saran-Ravichandran-06/job-portal"
   },
 ];
 
