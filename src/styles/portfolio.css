@@ -147,12 +147,8 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  filter: 
-    drop-shadow(3px 1px 0px #c39902)
-    drop-shadow(2px 1px 0px #c39902)
-    drop-shadow(2px 2px 0px #c39902)
-    drop-shadow(2px 1px 0px #ffffff)
-    drop-shadow(1px 1px 5px rgba(0,0,0,0.6));
+  filter:
+    drop-shadow(3px 1px 0px #c39902) drop-shadow(2px 1px 0px #c39902) drop-shadow(2px 2px 0px #c39902) drop-shadow(2px 1px 0px #ffffff) drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
   margin-bottom: 1.2rem;
 }
 
@@ -183,16 +179,12 @@
   font-size: clamp(3rem, 9vw, 6.7rem);
   font-style: italic;
   letter-spacing: 0.04em;
-  color: var(--cream-soft); 
+  color: var(--cream-soft);
   /* color: white;  */
   line-height: 0.95;
   text-shadow: 2px 3px 7px rgba(0, 0, 0, 0.50);
-  filter: 
-    drop-shadow(3px 3px 0px #c39902)
-    drop-shadow(3px 3px 0px #c39902)
-    drop-shadow(2px 2px 0px #c39902)
-    drop-shadow(3px 1px 0px #000000)
-    drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
+  filter:
+    drop-shadow(3px 3px 0px #c39902) drop-shadow(3px 3px 0px #c39902) drop-shadow(2px 2px 0px #c39902) drop-shadow(3px 1px 0px #000000) drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
 }
 
 .hero-title {
@@ -700,7 +692,9 @@
 /* ---------- Projects ---------- */
 
 .content-panel.projects-panel {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.02) 100%);
+  background:
+    radial-gradient(ellipse at 35% 50%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 60%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.02) 100%);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -721,7 +715,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   position: relative;
-  max-width: 800px;
+  width: 880px;
+  max-width: 90vw;
 }
 
 .project-card {
@@ -753,7 +748,8 @@
   transition: color 0.2s ease, transform 0.2s ease;
   display: flex;
   align-items: center;
-  margin-top: -2px; /* slight visual alignment correction */
+  margin-top: -2px;
+  /* slight visual alignment correction */
 }
 
 .project-link:hover {
@@ -762,7 +758,7 @@
 }
 
 .project-desc {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.9);
   margin: 0;
@@ -805,7 +801,7 @@
     max-height: 42vh;
     padding: 1.5rem 1.5rem 1.7rem;
   }
-  
+
   .content-panel.about-panel {
     top: 25%;
     bottom: auto;

@@ -20,7 +20,7 @@ export const profile = {
 export const skills = {
   categories: [
     {
-      label: "Technical: AI",
+      label: "Technical-AI",
       items: [
         "AI Integration",
         "Machine Learning",
@@ -30,7 +30,7 @@ export const skills = {
       ],
     },
     {
-      label: "Technical: DS",
+      label: "Technical-DS",
       items: [
         "Data Analysis",
         "Data Preprocessing",
@@ -75,22 +75,22 @@ export const techStack = {
 export const projects = [
   {
     name: "Smart Email Agent",
-    description: "AI-powered Smart Email & Communication Agent that connects with Gmail, classifies email priority, extracts actionable tasks, detects follow-ups, generates contextual reply drafts using local LLMs, and helps users manage communication workflows efficiently.",
+    description: "AI-powered agent connecting with Gmail to classify priorities, extract tasks, detect follow-ups, and generate contextual reply drafts via local LLMs to efficiently manage communication workflows very easily.",
     github: "https://github.com/Saran-Ravichandran-06/Smart-Email-Agent"
   },
   {
     name: "InsightIQ",
-    description: "InsightIQ is an AI Business Intelligence platform that enables users to upload datasets, ask questions in natural language, and receive interactive dashboards, KPI cards, visualizations, and AI-generated business insights.",
+    description: "An AI Business Intelligence platform enabling users to upload datasets, ask natural language questions, and receive interactive dashboards, KPI cards, and AI-generated business insights.",
     github: "https://github.com/Saran-Ravichandran-06/Business-Intelligence-Agent"
   },
   {
     name: "RAG-BOT",
-    description: "Full-stack RAG chatbot that answers questions from user-provided PDFs, text files, and web URLs. Uses per-chat vector stores, local LLaMA-3 via Ollama for generation, and automated evaluation to detect hallucinations. React UI with persistent history and contextual responses.",
+    description: "Full-stack RAG chatbot querying PDFs, text, and URLs. Utilizes per-chat vector stores, local LLaMA-3 via Ollama, and automated hallucination detection, wrapped in a React UI with persistent history and context.",
     github: "https://github.com/Saran-Ravichandran-06/RAG-BOT"
   },
   {
     name: "Job Portal System",
-    description: "Job Portal System is a simple web-based application built using PHP, MySQL, HTML, CSS, and JavaScript. It allows job seekers to search and apply for jobs, while recruiters can post and manage job listings. The system includes features like job application tracking, status updates, and role-based dashboards for seekers and recruiters.",
+    description: "A comprehensive web application built with PHP and MySQL enabling job seekers to search and apply for roles, while recruiters post listings. Features include application tracking and role-based dashboards.",
     github: "https://github.com/Saran-Ravichandran-06/job-portal"
   },
 ];
