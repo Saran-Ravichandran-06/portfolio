@@ -105,6 +105,7 @@
   border-radius: 6px;
   box-shadow: var(--panel-shadow);
   opacity: 0;
+  visibility: hidden;
   pointer-events: auto;
   scrollbar-width: thin;
 }
@@ -748,16 +749,22 @@
 
 .project-link {
   color: rgba(255, 255, 255, 0.8);
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: transparent;
   margin-top: -2px;
-  /* slight visual alignment correction */
 }
 
 .project-link:hover {
-  color: #ff0000;
-  transform: scale(1.1);
+  background-color: #ffffff;
+  color: #000000;
+  transform: scale(1.15) translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
 .project-desc {
