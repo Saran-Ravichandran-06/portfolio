@@ -79,17 +79,17 @@ export const projects = [
     github: "https://github.com/Saran-Ravichandran-06/Smart-Email-Agent"
   },
   {
-    name: "InsightIQ",
+    name: "Insight IQ",
     description: "An AI Business Intelligence platform enabling users to upload datasets, ask natural language questions, and receive interactive dashboards, KPI cards, and AI-generated business insights.",
     github: "https://github.com/Saran-Ravichandran-06/Business-Intelligence-Agent"
   },
   {
-    name: "RAG-BOT",
+    name: "RAG BOT",
     description: "Full-stack RAG chatbot querying PDFs, text, and URLs. Utilizes per-chat vector stores, local LLaMA-3 via Ollama, and automated hallucination detection, wrapped in a React UI with persistent history and context.",
     github: "https://github.com/Saran-Ravichandran-06/RAG-BOT"
   },
   {
-    name: "Job Portal System",
+    name: "Job Portal",
     description: "A comprehensive web application built with PHP and MySQL enabling job seekers to search and apply for roles, while recruiters post listings. Features include application tracking and role-based dashboards.",
     github: "https://github.com/Saran-Ravichandran-06/job-portal"
   },
