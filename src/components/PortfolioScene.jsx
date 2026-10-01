@@ -159,7 +159,7 @@ export default function PortfolioScene() {
           if (i === 1 && profilePicRef.current) {
             tl.to(
               profilePicRef.current,
-              { opacity: 0, duration: 0.6, ease: "power2.inOut" },
+              { autoAlpha: 0, duration: 0.6, ease: "power2.inOut" },
               stepStart
             );
           }
@@ -169,7 +169,7 @@ export default function PortfolioScene() {
             tl.to(
               prevEl,
               {
-                opacity: 0,
+                autoAlpha: 0,
                 y: prevScene.contentSide === "left" ? -14 : 14,
                 duration: 0.3,
                 ease: "power1.in",
@@ -182,8 +182,8 @@ export default function PortfolioScene() {
           if (curEl) {
             tl.fromTo(
               curEl,
-              { opacity: 0, y: 22 },
-              { opacity: 1, y: 0, duration: 0.42, ease: "power2.out" },
+              { autoAlpha: 0, y: 22 },
+              { autoAlpha: 1, y: 0, duration: 0.42, ease: "power2.out" },
               stepStart + 0.4
             );
           }
