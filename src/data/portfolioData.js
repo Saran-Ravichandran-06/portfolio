@@ -104,6 +104,7 @@ export const experience = [
     points: [
       "Streamlined processes using software and tools, enhancing overall performance.",
       "Integrated AI solutions into existing systems through collaboration with cross-functional teams.",
+      "Developed custom LLM-based automation scripts to accelerate internal data processing pipelines."
     ],
   },
   {
