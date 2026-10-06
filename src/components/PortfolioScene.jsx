@@ -113,7 +113,7 @@ export default function PortfolioScene() {
             trigger: trackRef.current,
             start: "top top",
             end: "bottom bottom",
-            scrub: 0.8,
+            scrub: 1.5,
             pin: stageRef.current,
             anticipatePin: 1,
             onUpdate: (self) => {
@@ -135,7 +135,7 @@ export default function PortfolioScene() {
               scale: target.scale,
               x: target.x,
               y: target.y,
-              duration: 0.62,
+              duration: 0.85,
               ease: "power2.inOut",
               onUpdate: applyCam,
             },
@@ -149,7 +149,7 @@ export default function PortfolioScene() {
               my: scene.focus.y * IMAGE_HEIGHT,
               mr: scene.focusRadius ?? DEFAULT_FOCUS_RADIUS,
               opacity: scene.contentSide === "full" ? 0 : 1,
-              duration: 0.62,
+              duration: 0.85,
               ease: "power2.inOut",
               onUpdate: applyFocus,
             },
@@ -159,7 +159,7 @@ export default function PortfolioScene() {
           if (i === 1 && profilePicRef.current) {
             tl.to(
               profilePicRef.current,
-              { autoAlpha: 0, duration: 0.6, ease: "power2.inOut" },
+              { autoAlpha: 0, duration: 0.85, ease: "power2.inOut" },
               stepStart
             );
           }
@@ -171,8 +171,8 @@ export default function PortfolioScene() {
               {
                 autoAlpha: 0,
                 y: prevScene.contentSide === "left" ? -14 : 14,
-                duration: 0.3,
-                ease: "power1.in",
+                duration: 0.45,
+                ease: "power2.inOut",
               },
               stepStart
             );
@@ -183,8 +183,8 @@ export default function PortfolioScene() {
             tl.fromTo(
               curEl,
               { autoAlpha: 0, y: 22 },
-              { autoAlpha: 1, y: 0, duration: 0.42, ease: "power2.out" },
-              stepStart + 0.4
+              { autoAlpha: 1, y: 0, duration: 0.55, ease: "power2.out" },
+              stepStart + 0.35
             );
           }
         }
