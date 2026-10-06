@@ -269,15 +269,15 @@
   align-items: center;
   justify-content: center;
   max-width: 560px;
-  transform: translateY(-3vh); /* Slight adjustment to center perfectly on the monitor */
+  transform: translateY(-6vh); /* Slight adjustment to center perfectly on the monitor */
 }
 
 .contact-title {
   font-family: 'Lora', serif;
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, 3.2rem);
   color: #ffffff;
-  line-height: 1.1;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  line-height: 1;
+  text-shadow: 0 0 13px rgba(255, 255, 255, 0.2);
 }
 
 .contact-sub {
@@ -288,14 +288,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.7rem;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .contact-link {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
@@ -303,7 +303,7 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(129, 127, 127);
   backdrop-filter: blur(4px);
   transition: all 0.25s ease;
 }
