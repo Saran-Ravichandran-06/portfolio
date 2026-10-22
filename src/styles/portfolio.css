@@ -268,13 +268,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 560px;
+  max-width: 540px;
   transform: translateY(-6vh); /* Slight adjustment to center perfectly on the monitor */
 }
 
 .contact-title {
   font-family: 'Lora', serif;
-  font-size: clamp(2.5rem, 5vw, 3.2rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   color: #ffffff;
   line-height: 1;
   text-shadow: 0 0 13px rgba(255, 255, 255, 0.2);
@@ -300,18 +300,18 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgb(255, 255, 255);
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
-  background: rgb(129, 127, 127);
+  background: rgb(86, 84, 84);
   backdrop-filter: blur(4px);
   transition: all 0.25s ease;
 }
 
 .contact-link:hover {
-  background: #ff0000;
-  border-color: #ff0000;
-  color: #ffffff;
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
 }

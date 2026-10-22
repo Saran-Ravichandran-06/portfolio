@@ -6,9 +6,7 @@ const Contact = forwardRef(function Contact(_, ref) {
     <div ref={ref} className="contact-panel">
       <div className="contact-inner">
         <h2 className="contact-title">
-          Let's build
-          <br />
-          something.
+          Let's connect !
         </h2>
         <div className="contact-links">
           <a className="contact-link" href={`mailto:${contact.email}`}>
